@@ -15,7 +15,7 @@ define('SFPBASE',    plugin_basename(__FILE__));
 /**
  * Plugin Settings Page
  */
-add_filter('plugin_action_links_' . SFPBASE, 'add_action_links');
+add_filter('plugin_action_links_' . SFPBASE, 'cfp_add_action_links');
 function add_action_links($actions)
 {
   $mylinks = array(
