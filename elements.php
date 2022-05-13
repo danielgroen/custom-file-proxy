@@ -16,7 +16,7 @@ define('SFPBASE',    plugin_basename(__FILE__));
  * Plugin Settings Page
  */
 add_filter('plugin_action_links_' . SFPBASE, 'cfp_add_action_links');
-function add_action_links($actions)
+function cfp_add_action_links($actions)
 {
   $mylinks = array(
     '<a href="' . admin_url('options-general.php?page=stage-file-proxy') . '">Settings</a>',
